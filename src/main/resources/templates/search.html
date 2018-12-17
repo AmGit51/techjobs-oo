@@ -30,6 +30,10 @@
 
     <hr />
 
+    <div th:if="${jobs} and ${jobs.isEmpty()}">
+        <h2>No Results</h2>
+    </div>
+
     <div th:replace="list-jobs :: jobs-list"></div>
 
 </div>
